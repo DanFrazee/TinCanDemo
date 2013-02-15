@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C63C399B1654433C006A97C5 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63C399A1654433C006A97C5 /* AddressBook.framework */; };
 		C66DB0C11652C76300457C6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66DB0C01652C76300457C6B /* UIKit.framework */; };
 		C66DB0C31652C76300457C6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66DB0C21652C76300457C6B /* Foundation.framework */; };
 		C66DB0C51652C76300457C6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66DB0C41652C76300457C6B /* CoreGraphics.framework */; };
@@ -18,9 +19,12 @@
 		C66DB0D71652C76300457C6B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C66DB0D61652C76300457C6B /* Default-568h@2x.png */; };
 		C66DB0DA1652C76300457C6B /* TCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66DB0D91652C76300457C6B /* TCDViewController.m */; };
 		C66DB0DD1652C76300457C6B /* TCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C66DB0DB1652C76300457C6B /* TCDViewController.xib */; };
+		C66DB0E41652C77F00457C6B /* TinCan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66DB0E31652C77F00457C6B /* TinCan.framework */; };
+		C66DB0E61652C8B400457C6B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C66DB0E51652C8B400457C6B /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C63C399A1654433C006A97C5 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C66DB0BC1652C76300457C6B /* TinCanDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinCanDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66DB0C01652C76300457C6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C66DB0C21652C76300457C6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +41,8 @@
 		C66DB0D81652C76300457C6B /* TCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCDViewController.h; sourceTree = "<group>"; };
 		C66DB0D91652C76300457C6B /* TCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCDViewController.m; sourceTree = "<group>"; };
 		C66DB0DC1652C76300457C6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TCDViewController.xib; sourceTree = "<group>"; };
+		C66DB0E31652C77F00457C6B /* TinCan.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TinCan.framework; sourceTree = "<group>"; };
+		C66DB0E51652C8B400457C6B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,14 +51,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				C66DB0C11652C76300457C6B /* UIKit.framework in Frameworks */,
+				C66DB0E61652C8B400457C6B /* SystemConfiguration.framework in Frameworks */,
 				C66DB0C31652C76300457C6B /* Foundation.framework in Frameworks */,
+				C63C399B1654433C006A97C5 /* AddressBook.framework in Frameworks */,
 				C66DB0C51652C76300457C6B /* CoreGraphics.framework in Frameworks */,
+				C66DB0E41652C77F00457C6B /* TinCan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C63C398516542B0C006A97C5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		C66DB0B11652C76300457C6B = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +89,9 @@
 		C66DB0BF1652C76300457C6B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C63C399A1654433C006A97C5 /* AddressBook.framework */,
+				C66DB0E51652C8B400457C6B /* SystemConfiguration.framework */,
+				C66DB0E31652C77F00457C6B /* TinCan.framework */,
 				C66DB0C01652C76300457C6B /* UIKit.framework */,
 				C66DB0C21652C76300457C6B /* Foundation.framework */,
 				C66DB0C41652C76300457C6B /* CoreGraphics.framework */,
@@ -83,6 +102,7 @@
 		C66DB0C61652C76300457C6B /* TinCanDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C63C398516542B0C006A97C5 /* Base */,
 				C66DB0CF1652C76300457C6B /* TCDAppDelegate.h */,
 				C66DB0D01652C76300457C6B /* TCDAppDelegate.m */,
 				C66DB0D81652C76300457C6B /* TCDViewController.h */,
@@ -255,9 +275,15 @@
 		C66DB0E11652C76300457C6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TinCanDemo/TinCanDemo-Prefix.pch";
 				INFOPLIST_FILE = "TinCanDemo/TinCanDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -266,9 +292,15 @@
 		C66DB0E21652C76300457C6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TinCanDemo/TinCanDemo-Prefix.pch";
 				INFOPLIST_FILE = "TinCanDemo/TinCanDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -293,6 +325,7 @@
 				C66DB0E21652C76300457C6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

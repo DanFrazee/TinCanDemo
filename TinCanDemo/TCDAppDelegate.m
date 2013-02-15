@@ -7,13 +7,16 @@
 //
 
 #import "TCDAppDelegate.h"
-
 #import "TCDViewController.h"
 
 @implementation TCDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [TCAPI configureDefaultAPIWithLRS:[NSURL URLWithString:@"https://cloud.scorm.com/ScormEngineInterface/TCAPI/public/"]
+	            authorizationProvider:[[TCBasicHTTPAuthentication alloc] initWithUsername:@"public" andPassword:@""]];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[TCDViewController alloc] initWithNibName:@"TCDViewController" bundle:nil];

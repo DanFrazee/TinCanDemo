@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TCDViewController : UIViewController
+@interface TCDViewController : UIViewController <TCAPIStatementRequestDelegate>
 
 @end
